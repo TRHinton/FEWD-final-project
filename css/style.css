@@ -1,0 +1,380 @@
+
+/*
+Project Name: Nomad Postcards
+Author: Tamara Hinton
+Final FEWD Project
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+body {
+  min-height: 100%;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #f0efef;
+  font-size: 26px;
+  line-height: 1.4;
+  color: #606161;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.logo {
+  font-size: 48px;
+  font-weight: 800;
+
+}
+
+header {
+  background: #dddddd;
+  padding: 25px 0;
+  overflow: hidden;
+}
+header .logo {
+  color: #d94929;
+  float: left;
+  
+}
+
+header nav {
+  float: right;
+  margin-top: 15px;
+}
+  
+header nav ul li {
+  display: inline-block;
+  margin: 0 0 0 40px;
+  font-size: 24px;
+}
+header nav ul li a {
+  color: #d94929;
+}
+
+.sliders {
+  background: url(../images/mallorca.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 660px;
+  margin: 0 auto;
+
+  
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  margin: 120px 0 90px;
+  font-weight: 600;
+}
+
+.contact-header {
+  margin-bottom: 30px;
+}
+
+
+.quote {
+  background-color: #aaaaaa;
+  overflow: auto;
+
+}
+
+.quote-copy {
+  font-weight: 400;
+  font-size: 30px;
+  color: white; 
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+.subscribe {
+  margin: 0 auto;
+  overflow: auto;
+  padding: 25px 0;
+
+}
+
+.subscribe-headline {
+  font-weight: 700;
+  font-size: 30px;
+  color: #d94929;
+  text-align: center;
+  margin-bottom: 15px;
+  
+
+}
+
+.subscribe-copy {
+  text-align: center;
+  margin: 20px 50px;
+
+}
+
+.bottom-cta {
+  padding-bottom: 50px;
+  text-align: center;
+   
+  
+}
+
+.orange {
+  background: #dddddd; 
+  color: #d94929;
+  font-size: 24px;
+}
+
+.button {
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 12px 0;
+  width: 280px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+h6 {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-image {
+  background: url(../images/venice.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+
+}
+ 
+.about {
+  margin: 0 auto;
+  overflow: auto;
+  padding: 25px 0;
+
+}
+
+.about-headline {
+  font-weight: 700;
+  font-size: 30px;
+  color: #d94929;
+  text-align: center;
+  margin-bottom: 15px;
+  
+
+}
+
+.about-copy {
+  text-align: center;
+  margin: 20px 50px;
+
+}
+
+#main {
+  margin: 0 auto;
+}
+#posts {
+  width: 700px;
+  margin: 0 auto;
+  vertical-align: top;
+}
+
+.post {
+  border-bottom: 1px solid #043049;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.post h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+.post h2 a {
+  color: #d94929;
+  text-align: center;
+}
+
+.post img {
+  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+
+
+
+}
+.post p {
+  font-size: 24px;
+  line-height: 1.333;
+  color: #606161;
+}
+.post p:first-of-type:first-letter {
+  float: left;
+  font-size: 80px;
+  line-height: 65px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-weight: 600;
+}
+
+.read-more a {
+  font-weight: bold;
+  color: #d94929;
+  
+}
+
+.read-less a {
+  font-weight: bold;
+  color: #d94929;
+
+}
+
+.read-more {
+  text-align: right;
+
+}
+
+.read-less {
+  text-align: right;
+
+}
+.readmore {
+  text-align: right;
+  margin-top: 30px;
+}
+.readmore a, .readless a {
+  color: #d94929;
+  font-weight: 600;
+}
+
+.readmore, .readless {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+.contact-form {
+  background: url(../images/namibiahome.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  margin: 0 auto;
+
+}
+
+input {
+    line-height: 20px;
+    width: 300px;
+    font-size: 20px;
+    color: #d94929;
+    display: block;
+    background-color: #fff;
+}
+label {
+  display: block;
+}
+
+.contact-form h2 {
+  font-size: 36px;
+  text-align: center;
+  color: #d94929;  
+  font-weight: 700;
+}
+
+.error {
+  color: red;
+    margin-bottom: 15px;
+}
+.success {
+  color: green;
+  margin-top: 15px;
+}
+
+
+footer {
+  background: #d94929;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+
+footer .logo {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+footer p {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 600;
+}
+
+

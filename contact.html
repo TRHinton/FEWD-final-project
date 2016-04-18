@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Be inspired to travel.">
+
+		<title>Nomad Postcards Blog</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<a href="index.html"><h1 class="logo">Nomad Postcards</h1></a>
+				<nav>
+					<ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="blog.html">Adventures</a></li>
+						<li><a href="contact.html">Contact</a></li>
+
+					
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section class="contact-form">
+		<div class="container">
+			<h2 class="contact-header">Register For Nomad Postcards</h2>
+			<div id="errorMessage" class="error hide"></div>
+			<form id="registrationForm" novalidate>
+				<label for="username">Username</label>
+				<input type="text" name="username" placeholder="Username">
+
+				<label for="email">Email</label>
+				<input type="email" name="emailAddress" placeholder="Email">
+
+
+				<label for="password">Password</label>
+				<input type="password" name="password" placeholder="Password">
+
+
+				<input type="submit" value="Register for Nomad Postcards!">
+			</form>
+			<div id="successMessage" class="success hide"></div>
+		</div>
+		</section>
+
+	<footer>
+		<h4 class="logo">Nomad Postcards</h4>
+		<p class="copyright">Copyright 2015. Nomad Postcards.</p>
+	</footer>
+			
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/contact.js"></script>
+	</body>
+</html>
