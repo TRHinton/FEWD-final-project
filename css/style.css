@@ -103,7 +103,7 @@ header nav ul li a {
 }
 
 .sliders {
-  background: url(../images/mallorca.jpg);
+  background: url(../images/mallorca.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -196,7 +196,7 @@ h6 {
 }
 
 .about-image {
-  background: url(../images/venice.jpg);
+  background: url(../images/venice.JPG);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
